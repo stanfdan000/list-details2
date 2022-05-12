@@ -1,1 +1,12 @@
 /* add home page styles here */
+body {
+    background-image: url('../assets/Ptable.png');
+    width: fit-content;
+}
+
+
+
+#pTable-Container {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,3 +1,5 @@
+import { renderListItem } from './render-utils';
+import { element } from './fetch-utils';
 // import functions and grab DOM elements
 
 // let state
