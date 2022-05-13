@@ -22,7 +22,7 @@ export function renderTableDetails(pTable) {
     const nameEL = document.createElement('p');
     const numberEL = document.createElement('p');
     const typeEl = document.createElement('p');
-    const PimgEL = document.createElement('p');
+   
     const pEL = document.createElement('p');
 
     div.classList.add('table-Details');
@@ -30,5 +30,14 @@ export function renderTableDetails(pTable) {
     nameEL.classList.add('name');
     numberEL.textContent = pTable.numberEL;
     numberEL.classList.add('number');
+    typeEl.textContent = pTable.type;
+    typeEl.classList.add('type');
+    pEL.textContent.add('p');
+    pEL.classList.add('p');
 
+    img.src = `../assets/${pTable.Pimg}}`;
+
+    div.append(nameEL, img, numberEL, typeEl, pEL);
+
+    return div;
 }

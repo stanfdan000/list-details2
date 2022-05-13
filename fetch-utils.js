@@ -3,12 +3,23 @@ const supabase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 const client = supabase.creatClient(supabase_url, supabase_key);
 
-export async function gettables() {
+export async function getpTable() {
     const response = await client
+        .from('pTable')
+        .select();
+
+    return response.data;
+
 }
 
 
-export async function gettable() {
-    const response = await client
+export async function getTable(id) {
+    const response = await client;
+        .from('pTable')
+        .select()
+        .match({ id: id })
+        .single();
+
+    return response.data;
 
 }
